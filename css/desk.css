@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 .page {
     position: relative;
     height: 100vh;
@@ -43,9 +47,12 @@
 
 /* 슬라이드 */
 #slide {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 1080px;
-    margin: 0 auto;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -59,22 +66,27 @@
     position: relative;
     float: left;
     width: 20%;
+    height: 300px;
     margin: 0 10px;
-    box-sizing: border-box;
-    overflow: hidden;;
+    overflow: hidden;
 }
 
 #slide > ul > li > img {
-    display: block;
-    width: 100%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     transition-duration: 400ms;
 }
 
 #slide > ul > li > .textBox {
-    display: none;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     background-color: rgba(0, 0, 0, 0.8);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition-duration: 200ms;
 }
 
 #slide > ul > li > .textBox > h3 {
@@ -88,10 +100,12 @@
 
 #slide > ul > li:hover > img {
     transform: scale(1.2);
+    transform: translate(-50%, -50%);
 }
 
 #slide > ul > li:hover > .textBox {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 #slide > button {

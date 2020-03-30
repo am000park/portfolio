@@ -10,7 +10,7 @@ $(function() {
     var page = 0;
     var scrollChk = false;
 
-    // $html.animate({ scrollTop: 0 });
+    $html.animate({ scrollTop: 0 });
 
     $html.on("wheel", function(e) {
         if(scrollChk) return;
