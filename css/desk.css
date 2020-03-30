@@ -78,7 +78,7 @@ body {
     transition-duration: 400ms;
 }
 
-#slide > ul > li > .textBox {
+#slide > ul > li > div {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     background-color: rgba(0, 0, 0, 0.8);
@@ -89,7 +89,7 @@ body {
     transition-duration: 200ms;
 }
 
-#slide > ul > li > .textBox > h3 {
+#slide > ul > li > div > h2 {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -98,12 +98,12 @@ body {
     color: white;   
 }
 
-#slide > ul > li:hover > img {
+/*#slide > ul > li:hover > img {
     transform: scale(1.2);
     transform: translate(-50%, -50%);
-}
+}*/
 
-#slide > ul > li:hover > .textBox {
+#slide > ul > li:hover > div {
     opacity: 1;
     visibility: visible;
 }
@@ -131,12 +131,5 @@ body {
     background: url("https://i.imgur.com/pw4Yfrt.png") no-repeat right center;
 }
 
-#next:hover,
-#prev:hover {
-    opacity: 1;
-}
-
-#next > span,
-#prev > span {
-    display: none;
-}
+#slide > button:hover { opacity: 1;}
+#slide > button > span { display: none; }
