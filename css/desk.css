@@ -123,12 +123,12 @@ body {
 
 #next {
     left: 0;
-    background: url("https://i.imgur.com/DBK27Kx.png") no-repeat left center;
+    background: url("") no-repeat left center;
 }
 
 #prev {
     right: 0;
-    background: url("https://i.imgur.com/pw4Yfrt.png") no-repeat right center;
+    background: url("") no-repeat right center;
 }
 
 #slide > button:hover { opacity: 1;}
